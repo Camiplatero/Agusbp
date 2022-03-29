@@ -2,7 +2,7 @@
 
 
 *{
-	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -12,25 +12,24 @@ html{
 	font-size: 62.5%;
 }
 
-/*body{
+body{
 	background-color: black;
-}*/
+}
 
-/*header{
+header{
 	background-image: url(../img/header.jpeg);
 	background-size: cover;
 	height: 200px;
 	width: 100%;
 	background-repeat: no-repeat;
-}*/
-
-/*nav ul li a{
+}
+nav ul li a{
 	color: whitesmoke;
 	font-weight: 300;
 	font-size: 2em;
 	text-decoration: none;
 	text-align: center;
-}*/
+}
 
 section div button{
 	color: black;
@@ -55,7 +54,7 @@ section div button{
 	"footer"
 }
 
-/*#nav{
+#nav{
 	grid-area: nav;
 	position: sticky;
 	list-style: none;
@@ -64,7 +63,7 @@ section div button{
 #nav ul li a:hover{
 			color: grey;
 			font-weight: 600;
-}*/
+}
 
 #header{
 	grid-area: header;
@@ -95,17 +94,17 @@ section div button{
 
 
 /*inicia botonera*/ 
-/*.botonera {
+.botonera {
 		top: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;	
 		justify-content: center;
 		background-color: black;
-		*/
+		
 	}
 
-	/*.botonera img{
+	.botonera img{
 		width: 100px;
 		margin-bottom: 5px;
 	}
@@ -120,14 +119,14 @@ section div button{
 		margin-right: 20px;
 
 	}
-*/
+
 
 		/*hover*/
-/*		.botonera ul li a:hover{
+		.botonera ul li a:hover{
 			color: grey;
 			font-weight: 600;
 		}
-*/
+
 @keyframes animateLogo{
 	0%{width: 75px}
 	25%{width: 100px}
@@ -261,9 +260,9 @@ section div button{
 	
 	}
 
-	/*header{
+	header{
 	height: 400px
-	}*/
+	}
 
 	nav ul li a{
 		font-size: 4em;

@@ -1,0 +1,29 @@
+.footer{
+	background-color: $textColor;
+	background-blend-mode: multiply;
+	color: $mainColor;
+	margin-top: 50px;
+	font-size: $txtS;
+	font-weight: $fontLight;
+	height: 50px;
+	display: inline-flex;
+	align-items: center;	
+	justify-content: center;
+
+	img{
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	}
+
+	@media (min-width: 1200px){
+		font-size: $txtM;
+		height: 100px;
+		justify-content: flex-end;
+		img{
+		width: 50px;
+		height: 50px;	
+		}
+	}
+
+}
