@@ -1,0 +1,16 @@
+//Colores
+
+$mainColor:black;
+$secondaryColor: grey;
+$textColor: white;
+$backgroundTextColor: rgba(255, 255, 255, 0.2);
+
+//Sizing
+$w-100: 100%;
+$w-75: 75%;
+$w-50: 50%;
+$w-25: 25%;
+
+body{
+	background-color: $mainColor;
+}

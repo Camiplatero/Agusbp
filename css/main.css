@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: black; }
+
+.botonera {
+  background-color: black;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; }
+  @media (min-width: 1200px) {
+    .botonera {
+      padding: 10px 30px;
+      flex-direction: row;
+      justify-content: space-between; } }
+  .botonera img {
+    width: 50%;
+    margin-bottom: 5px; }
+    @media (min-width: 1200px) {
+      .botonera img {
+        width: 75%;
+        margin-left: 20px; } }
+  .botonera ul {
+    display: flex; }
+    .botonera ul li {
+      list-style: none;
+      margin-right: 20px; }
+      .botonera ul li a {
+        font-color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-align: center; }
+        @media (min-width: 1200px) {
+          .botonera ul li a {
+            font-size: 2em;
+            font-weight: 400; } }
+        .botonera ul li a:hover {
+          color: grey;
+          font-weight: 600; }
+
+.header {
+  background-image: url(../img/header.jpeg);
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat; }
+  @media (min-width: 1200px) {
+    .header {
+      height: 300px; } }
+
+.botonPedido {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 25px;
+  border: 8px;
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  justify-content: center; }
+  .botonPedido button {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none; }
+  @media (min-width: 1200px) {
+    .botonPedido {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      width: 50%; } }
+  .botonPedido:hover {
+    transform: translate(10px, -10px);
+    cursor: pointer; }
+
+.productos {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  overflow-x: auto; }
+
+.titulos {
+  color: white;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 20px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2); }
