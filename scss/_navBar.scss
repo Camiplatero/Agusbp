@@ -1,5 +1,5 @@
 .botonera {
-	    background-color: $mainColor;
+	    @include color($textColor, $mainColor)
 		top: 0;
 		display: flex;
 		flex-direction: column;
@@ -16,7 +16,7 @@
 			width: $w-50;
 			margin-bottom: 5px;
 			@media (min-width: 1200px){
-				width: $w-75;
+				width: 60%;
 				margin-left: 20px;
 			}
 
@@ -30,15 +30,12 @@
 				margin-right: 20px;
 
 				a{
-					font-color: $textColor;
-					font-family: $fontMain;
-					font-weight: $fontLight;
-					font-size: $txtS;
+					@include letra($txtS,$fontLight,center);
+					color: $textColor;
 					text-decoration: none;
-					text-align: center;
 					@media (min-width: 1200px){
-						font-size: $txtM;
-						font-weight: $fontNormal;
+						@include letra($txtL,$fontNormal,center);
+				
 					}
 					&:hover{
 						color: $secondaryColor;

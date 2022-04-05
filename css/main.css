@@ -10,7 +10,43 @@ html {
 body {
   background-color: black; }
 
+.txt, .txt-titulos, .txt-contenido {
+  color: white;
+  margin: 20px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.txt-titulos {
+  font-size: 3em;
+  font-weight: 400; }
+  @media (min-width: 1200px) {
+    .txt-titulos {
+      font-weight: 600; } }
+
+.txt-contenido {
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 300; }
+  @media (min-width: 1200px) {
+    .txt-contenido {
+      font-weight: 400;
+      margin-left: 30px;
+      margin-top: 30px;
+      margin-bottom: 30px; } }
+
+.sombraLight {
+  box-shadow: 2px 2px 5px #2f2f2f; }
+
+.sombraDark {
+  box-shadow: 2px 2px 5px #e0e0e0; }
+
+.sombraGrey {
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); }
+
 .botonera {
+  color: white;
   background-color: black;
   top: 0;
   display: flex;
@@ -28,7 +64,7 @@ body {
     margin-bottom: 5px; }
     @media (min-width: 1200px) {
       .botonera img {
-        width: 75%;
+        width: 60%;
         margin-left: 20px; } }
   .botonera ul {
     display: flex; }
@@ -36,16 +72,18 @@ body {
       list-style: none;
       margin-right: 20px; }
       .botonera ul li a {
-        font-color: white;
         font-family: "Roboto", sans-serif;
-        font-weight: 300;
         font-size: 1.5em;
-        text-decoration: none;
-        text-align: center; }
+        font-weight: 300;
+        text-align: center;
+        color: white;
+        text-decoration: none; }
         @media (min-width: 1200px) {
           .botonera ul li a {
-            font-size: 2em;
-            font-weight: 400; } }
+            font-family: "Roboto", sans-serif;
+            font-size: 3em;
+            font-weight: 400;
+            text-align: center; } }
         .botonera ul li a:hover {
           color: grey;
           font-weight: 600; }
@@ -61,23 +99,22 @@ body {
       height: 300px; } }
 
 .botonPedido {
+  color: black;
+  background-color: white;
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: white;
   border-radius: 25px;
   border: 8px;
   width: 100%;
   align-content: center;
-  justify-items: center;
-  text-align: center;
   justify-content: center; }
   .botonPedido button {
-    color: black;
     font-family: "Roboto", sans-serif;
     font-size: 5em;
     font-weight: 800;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none; }
   @media (min-width: 1200px) {
@@ -109,19 +146,6 @@ body {
       padding: 10px;
       justify-content: center; } }
 
-.titulos {
-  color: white;
-  font-size: 3em;
-  font-weight: 400;
-  margin: 20px;
-  text-align: center;
-  justify-items: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2); }
-  @media (min-width: 1200px) {
-    .titulos {
-      font-weight: 600; } }
-
 .card {
   position: inherit; }
   .card img {
@@ -130,11 +154,12 @@ body {
     margin: 10px;
     justify-content: space-between; }
   .card h2 {
+    color: black;
+    background-color: white;
     font-family: "Roboto", sans-serif;
     font-size: 2em;
     font-weight: 400;
     text-align: center;
-    background-color: white;
     margin: 10px 10px;
     align-items: center; }
     @media (min-width: 1200px) {
@@ -142,12 +167,12 @@ body {
         font-size: 3em; } }
   .card p {
     color: black;
+    background-color: white;
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
     font-weight: 300;
     text-align: justify-all;
     justify-items: space-between;
-    background-color: white;
     margin: 10px 10px;
     align-items: center; }
     @media (min-width: 1200px) {
@@ -160,12 +185,13 @@ body {
     transition-duration: 0.3s; }
 
 .footer {
-  background-color: white;
-  background-blend-mode: multiply;
   color: black;
-  margin-top: 50px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
   height: 50px;
   display: inline-flex;
   align-items: center;

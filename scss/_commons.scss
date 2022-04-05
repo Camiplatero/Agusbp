@@ -1,5 +1,4 @@
 //Colores
-
 $mainColor:black;
 $secondaryColor: grey;
 $textColor: white;
@@ -11,6 +10,80 @@ $w-75: 75%;
 $w-50: 50%;
 $w-25: 25%;
 
+//Tamaños fuente
+$txtXL: 5em; 
+$txtL: 3em;
+$txtM: 2em;
+$txtS: 1.5em;
+
+
+//Fuente weight
+$fontBold: 800;
+$fontBlack: 600;
+$fontNormal: 400;
+$fontLight: 300;
+
 body{
 	background-color: $mainColor;
+}
+
+.txt{
+	color: $textColor;
+	margin: 20px;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+	background-color: $backgroundTextColor;
+	}
+
+
+.txt-titulos{
+	@extend .txt;
+	font-size: $txtL;
+	font-weight: $fontNormal;
+	@media (min-width: 1200px){
+		font-weight: $fontBlack;
+	}
+}
+
+.txt-contenido{
+	@extend .txt;
+	justify-content: center;
+	font-size: $txtM;
+	font-weight: $fontLight;
+	@media (min-width: 1200px){
+		font-weight: $fontNormal;
+		margin-left: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+@mixin color ($color, $backgroundColor){
+	color: $color;
+	background-color: $backgroundColor;
+}
+
+@mixin letra ($fontSize, $fontWeight, $textAlign){
+	font-family: $fontMain;
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	text-align: $textAlign;
+}
+
+$sombras:(
+	'uno': rgba(255, 255, 255, 0.2),
+	'dos': #e0e0e0,
+	'tres': #2f2f2f);
+
+.sombraLight{
+	box-shadow: 2px 2px 5px map-get($map:$sombras, $key:'tres');
+}
+
+.sombraDark{
+	box-shadow: 2px 2px 5px map-get($map:$sombras, $key:'dos');
+}
+
+.sombraGrey{
+	box-shadow: 2px 2px 5px map-get($map:$sombras, $key:'uno');
 }

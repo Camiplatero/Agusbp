@@ -20,20 +20,7 @@
 	}
 }
 
-.titulos{
-	color: $textColor;
-	font-size: $txtL;
-	font-weight: $fontNormal;
-	margin: 20px;
-	text-align: center;
-	justify-items: center;
-	align-items: center;
-	background-color: $backgroundTextColor;
-	@media (min-width: 1200px){
-		font-weight: $fontBlack;
-	}
 
-}
 
 .card {	
 		position: inherit;
@@ -45,11 +32,8 @@
 		justify-content: space-between;
 		}
 		h2{
-		font-family: $fontMain;
-		font-size: $txtM;
-		font-weight: $fontNormal;
-		text-align: center;
-		background-color: $textColor;
+		@include color($mainColor, $textColor);
+		@include letra($txtM, $fontNormal, center);
 		margin: 10px 10px;
 		align-items: center;
 			@media (min-width: 1200px){
@@ -58,13 +42,9 @@
 	
 		}
 		p{
-		color: $mainColor;
-		font-family: $fontMain;
-		font-size: $txtS;
-		font-weight: $fontLight;
-		text-align: justify-all;
+		@include color($mainColor, $textColor);
+		@include letra($txtS, $fontLight, justify-all);
 		justify-items: space-between;
-		background-color: $textColor;
 		margin: 10px 10px;
 		align-items: center;
 			@media (min-width: 1200px){
