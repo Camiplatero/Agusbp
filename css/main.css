@@ -110,7 +110,7 @@ body {
   width: 100%;
   align-content: center;
   justify-content: center; }
-  .botonPedido button {
+  .botonPedido a {
     font-family: "Roboto", sans-serif;
     font-size: 5em;
     font-weight: 800;

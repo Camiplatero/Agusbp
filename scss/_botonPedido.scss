@@ -10,7 +10,7 @@
 	align-content: center;
 	justify-content: center;
 
-	button{
+	a{
 		@include letra($txtXL,$fontBold, center);
 		text-transform: uppercase;
 		text-decoration: none;
