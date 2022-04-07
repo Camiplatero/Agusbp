@@ -46,6 +46,16 @@ body{
 	}
 }
 
+.txt-subtitulos{
+	@extend .txt;
+	font-size: $txtL;
+	font-weight: $fontLight;
+	@media (min-width: 1200px){
+		font-weight: $fontNormal;
+	}
+}
+
+
 .txt-contenido{
 	@extend .txt;
 	justify-content: center;
@@ -56,6 +66,17 @@ body{
 		margin-left: 30px;
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+}
+
+.txt-forms{
+	@extend .txt;
+	font-size: $txtS;
+	font-weight: $fontLight;
+	text-align: left;
+	margin: 0px;
+	@media (min-width: 1200px){
+		font-weight: $fontNormal;
 	}
 }
 

@@ -10,6 +10,7 @@
 	justify-content: center;
 	align-content: center;
 	overflow-x: auto;
+	
 	@media (min-width: 1200px){
 		margin-left: 30px;
 		margin-right: 30px;
@@ -31,7 +32,7 @@
 		margin: 10px;
 		justify-content: space-between;
 		}
-		h2{
+		h2, figcaption{
 		@include color($mainColor, $textColor);
 		@include letra($txtM, $fontNormal, center);
 		margin: 10px 10px;
@@ -51,6 +52,7 @@
 			font-size: $txtM;
 			}
 		}
+		
 		
 		a:hover{
 				background-color: grey;
