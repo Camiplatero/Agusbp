@@ -109,11 +109,3 @@ $sombras:(
 	box-shadow: 2px 2px 5px map-get($map:$sombras, $key:'uno');
 }
 
-.aparecer{
-	animation-delay: 2s;
-	animation-direction: right;
-	animation-name: slidein;
-	animation-duration: 2s;
-	transform: translate(10px);
-
-}
